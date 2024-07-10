@@ -12,28 +12,35 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: 'poppins', sans-serif;
 }
 
 body{
     background-color: #27282c;
     color: white;
+    
+    text-align: center;
+}
+
+.all{
+    overflow: hidden;
+   
 }
 .container{
-    width: 98.5vw;
+    width: 100%;
     height: 100vh;
     background-image:url('/img/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:100%  100% ;
-    padding: 140px 400px;
-    text-align: center;
+    /* padding: 140px 400px; */
+    align-content: center;
 }
 
 .sammy{
     font-family: "Sacramento", cursive;
-    font-size: 103px;
+    font-size: 150px;
     letter-spacing: 1px;
     margin-bottom: 15px;
     
@@ -46,23 +53,23 @@ body{
 
 .myinfo{
    display: grid;
+   width: 100%;
    height: 100vh;
    text-align: center;
-   grid-template-rows: 1fr;
-   grid-template-columns: 3fr;
-   gap: 10px;
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-columns: 1fr;
    /* border: solid white 3px; */
 }
  
 .avatar{
     
     border: solid 2px white;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     justify-self: center;
     margin-top: 80px; 
     border-radius:  100%;
-    background-image: url("img/Pro.jpg");
+    background-image: url("img/pro3.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -92,8 +99,8 @@ body{
 
 .container2{
     display: grid;
-    row-gap: 50px;
-    width: 98.5vw;
+    /* row-gap: 50px; */
+    /* width: 98.5vw; */
     height: 200vh;
     justify-content: center;
     align-items: center;
@@ -103,7 +110,7 @@ body{
 
 .skill{
     color: var(--clr);
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .sect1{
@@ -183,10 +190,6 @@ body{
     color: var(--clr);
 }
 
-/* .combo{
-
-} */
-
 a{
     text-decoration: none;
     color: whitesmoke;
@@ -224,7 +227,7 @@ a:hover{
 
 footer{
     background-color: var(--clr);
-    width: 98vw;
+    width: 100vw;
     height: 30vh;
 }
 
@@ -248,6 +251,1167 @@ footer{
     font-size: 14px;
 }
 
+    /* Media Quary for the Application */
+
+    /*Desktop */
+    /* At the greatest width */
+    /* @media(max-width:1971px){
+        .container{
+            width: 100%;
+            text-align: center;
+            align-content: center;
+        }
+
+        .sammy{
+            font-size: 250px;
+        }
+
+        .para{
+            font-size: 40px;
+        }
+
+        .avatar{
+            width: 400px;
+            height: 400px;
+        }
+
+        .hello{
+            font-size: 95px;
+        }
+
+        .web{
+            border: 2px solid red;
+            width: 040%;
+            font-size: 30px;
+        }
+
+        .skill{
+            font-size: 
+                90px;
+        }
+
+        .sect1{
+            height: 70vh;
+        }
+
+        .first{
+            border: solid 2px red;
+            width: 500px;
+            height: 500px;
+        }
+
+        .dev{
+            width: 500px;
+            height: 500px;
+        }
+
+        .sect1, .sect2{
+            border: solid 2px red;
+        }
+
+        .bana{
+            width: 350px;
+             height: 350px;
+        }
+
+        .second{
+            border: solid 2px red;
+            width: 700px;
+            height: 400px;
+        }
+
+        .design{
+            font-size: 50px;
+            width: 700px;
+            border: solid 2px red;
+        }
+
+        .para2{
+            font-size: 30px;
+            height: 200px;
+        }
+
+        .touch{
+            font-size: 60px;
+        }
+
+        .combo{
+            font-size: 30px;
+        }
+
+        .sweet{
+            font-size: 30px;
+        }
+        
+        .contact{
+            font-size: 40px;
+        }
+
+        .contact:hover{
+            font-size: 38px;
+        }
+
+        .foot{
+            border: solid 2px red;
+        }
+
+        .the_foot{
+            border: solid 2px red;
+            width: 180px;
+            font-size: 29px;
+        }
+
+        .copy{
+            font-size: 25px;
+        }
+    }
+
+    /* At 1648 breakpoint */
+
+    /* @media (max-width:1648px){
+        .container{
+            width:100% ;
+            height: 100vh;
+            border: solid 5px red;
+            padding:3px;
+            align-content: center;
+            text-align: center;
+        }
+
+        .sammy{
+            border: solid 2px red; */
+            /* margin: 0; */
+            /* padding: 0; */
+            /* width: 100%;
+            font-size: 200px;
+        } */
+
+        /* .myinfo{
+            border: solid 2px red;
+            height: 120vh;
+            row-gap: 0;
+            display: grid;
+            grid-template-rows: 2fr 1fr 1fr ;
+           
+        }
+
+        .avatar{
+            width: 400px;
+            height: 400px;
+            margin-top: 20px;
+        }
+
+        .hello{
+            border: solid red 2px;
+            width: 100%;
+            font-size: 90px;
+           
+        }
+
+        .web{
+            margin-top: 0;
+            width: 50%;
+            border: solid red 2px;
+            font-size: 30px;
+        }
+
+        .skill{
+            font-size: 80px;
+        }
+
+        .design{
+            font-size: 38px;
+        }
+
+        .para2{
+            font-size: 28px;
+        }
+
+        .touch{
+            font-size: 50px;
+        }
+
+        .combo{
+            font-size: 25px;
+        }
+
+        .sweet{
+            font-size: 20px;
+        }
+
+        .the_foot{
+            font-size: 30px;
+            margin: 10px;
+            width: 12%;
+            border: solid 2px red;
+            text-align: center;
+        }
+
+        .copy{
+            font-size: 25px;
+        }
+    } */
+
+    /* At 1380px breakpoint */
+    /* @media(max-width: 1378px){
+        .sammy{
+            width: 100%;
+            border: solid 2px red;
+            font-size: 170px;
+        }
+
+        .myinfo{
+            display: grid;
+            grid-row: 1fr 1fr 2fr;
+        }
+
+        .avatar{
+            width: 300px;
+            height: 300px;
+        }
+
+        .skill{
+            font-size: 100px
+        }
+        .design{
+            border: 2px solid red;
+            width: 100%;
+            font-size: 36px;
+        }
+
+        .para2{
+            font-size: 25px;
+        }
+
+        .combo{
+            font-size: 29px;
+        }
+
+        .sweet{
+            font-size: 20px;
+        }
+
+        .foot{ */
+            /* margin-left: 330px; */
+            /* width: 100%;
+            display: flex; */
+            /* flex-wrap: nowrap; */
+            /* flex-grow: 2; */
+            /* justify-content: center;
+            border: solid red 2px;
+        }
+
+        .the_foot{
+            display: flex;
+            font-size: 25px;
+            width: 14%;
+            border: solid 2px red;
+            justify-content: center;
+        }
+
+        .copy{
+            font-size: 20px;
+        }
+    } */
+
+    /* At 1089 breakpoint */
+    /* @media(max-width: 1089px){
+        .container{
+            width: 100%;
+            border: solid red 2px; 
+            text-align: center;
+            align-content: center;
+        }
+
+        .myinfo{ */
+            /* width: 40%; */
+            /* border: solid 2px red; */
+        /* }
+
+        .skill{
+            width: 98%;
+            font-size:65px ;
+        }
+
+        .design{
+            font-size: 28px;
+        }
+
+        .touch{ 
+            width: 98%;
+            border: solid 2px red;
+         }
+
+        .combo{ 
+            width: 98%;
+           border: solid 2px red;
+         }
+
+        .sweet{ 
+            border: 2px solid red;
+         }
+
+        .first{ 
+            border: solid 2px red;
+         }
+
+        .sect1, .sect2 { 
+            width: 98%;
+            border: solid 2px red;
+         }
+
+        .copy{ 
+            border: solid 2px red;
+        }
+
+        .skill{ 
+            border: solid 2px red;
+         }
+
+        .para2{ 
+            border: solid 2px red;
+         }
+        .foot{
+            width: 100%;
+        }
+
+        .footer{
+            width: 100%; 
+            border: solid 2px red;
+        }
+
+        .the_foot{
+            width: 15%;
+           
+
+        }
+    }  */
+
+
+    /* 1025px breakpoint */
+    @media(max-width:1021.670px){
+        .skill{
+            font-size: 60px;
+            font-weight: 700;
+        }
+        .combo{
+            font-size: 23px;
+        }
+
+        .para2{
+            font-size: 20px;
+        }
+        .para{
+            /* border: solid 1px red; */
+        }
+    }
+
+    @media(max-width: 1020px){
+        body{
+            /* width: 98%; */
+            padding: 0;
+            margin: 0;
+           align-content: center;
+           box-sizing: border-box;
+        }
+
+        .all{
+            align-self: center;
+            /* width: 98%; */
+        }
+        .container{
+            /* border: solid 1px red; */
+            width: 100%;
+        }
+
+        .sammy{
+
+            /* border: solid red 1px; */
+        }
+
+        .para{
+            font-size: 27px;
+        }
+
+        .footer{
+            width: 99.8%;
+            /* border: solid 1px red; */
+        }
+        
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+           /* border: solid 2px green; */
+            box-sizing: border-box;
+            /* align-content: center; */
+           
+        }
+
+        .all{
+            width: 100%;
+            box-sizing: border-box;
+            /* border: solid blue 2px; */
+        }
+
+        .sect1{
+            /* border: solid 1px red; */
+            column-gap: 0;
+        }
+
+        .sect2{
+            /* border:solid 1px red; */
+        }
+
+
+
+        .combo{
+            /* border: solid 1px red; */
+            width: 95%;
+        }
+
+        .foot{
+            box-sizing: border-box;
+            width: 99.8%;
+            /* border: solid 1px red; */
+        }
+
+        .hello{
+            /* border: solid 1px red; */
+
+        }
+
+        .web{
+            /* border: solid red 1px; */
+        }
+
+        .skill{
+            width: 99%;
+            /* border: solid 1px red; */
+        }
+
+        .myinfo{
+            /* border: solid 1px red; */
+        }
+
+        .first{
+            /* border: solid 1px red; */
+        }
+
+        .second{
+            /* border: solid 1px red; */
+        }
+
+        .touch{
+            /* border: solid 1px red; */
+            width: 99%;
+        }
+
+    }
+
     
 
+    /* At 926px Breakpoint */
+    @media(max-width:926px){
+        .sammy{
+            font-size: 125px;
+        }
 
+        .avatar{
+            width: 200px;
+            height: 200px;
+        }
+
+        .hello{
+            font-size: 55px;
+        }
+
+        .web{
+            font-size: 20px;
+        }
+
+        .skill{
+            font-size: 47px;
+
+        }
+
+        .dev{
+            width: 250px;
+            height: 250px;
+        }
+
+        .design{
+            font-size: 20px;
+        }
+
+        .second{
+            height: 220px;
+            /* border: solid 1px red; */
+        }
+
+
+        .para2{
+            font-size: 17px;
+        }
+
+        .touch{
+            font-size: 40px;
+        }
+
+        .combo{
+            font-size: 20px;
+        }
+
+        .sweet{
+            font-size: 15px;
+        }
+
+        .contact{
+            font-size: 23px;
+        }
+
+        .contact:hover{
+            font-size: 25px;
+        }
+
+        .the_foot{
+            font-size: 17px;
+        }
+
+        .the_foot:hover{
+            font-size: 20px;
+        }
+
+        .copy{
+            font-size: 12px;
+        }
+    }
+
+
+    /* At896 BREAKPOINT */
+    @media (max-width: 897.5px){
+        .sammy{
+            font-size: 150px;
+            height: 40vh;
+            align-content: center;
+        }
+
+        
+
+        .all{
+            width: fit-content;
+            display: block;
+            justify-content: center;
+            
+        }
+
+        .skill{
+            width: 90%;
+            margin-left: 20px;
+        }
+
+        .sect1, .sect2{
+            width: 100%;
+            /* margin-left: 20px; */
+        }
+
+        .second{
+            width: 45%;
+        }
+        
+
+        .para{
+            font-size: 19px;
+        }
+
+        .design{
+            font-size: 30px;
+        }
+
+        .para2{
+            font-size: 20px;
+        }
+
+        .dev{
+            width: 300px;
+        }
+        .bana{
+            width: 250px;
+            height: 250px;
+        }
+
+        .touch{
+            font-size: 50px;
+        }
+        .sweet{
+            font-size: 20px;
+        }
+        .contact{
+            font-size: 35px;
+        }
+        .contact:hover{
+            font-size: 33px;
+        }
+
+        .the_foot{
+            font-size: 20px;
+        }
+
+        .the_foot:hover{
+            font-size: 18px;
+        }
+        .copy{
+            font-size: 15px;
+        }
+    }
+
+
+    /* At 890 breakpoint */
+    
+    @media(max-width:890px){
+        .second{
+            width: 52%;
+        }
+        .design{
+            /* border: solid 1px red; */
+        }
+    }
+
+    /* At 800 breakpoint */
+    @media(max-width:800px){
+        .sammy{
+            font-size: 130px;
+        }
+
+        .dev{
+            width: 250px;
+            height: 250px;
+        }
+
+        .second{
+            width: 50%;
+        }
+
+        .design{
+            font-size: 29px;
+        }
+    }
+
+    /* At 780 breakpoint */
+    @media(max-width:780px){
+        .design{
+
+            font-size: 25px;
+        }
+    }
+
+    /* At 677.5 breakpoint */
+    @media(max-width:677.5px){
+        .design{
+            font-size: 24px;
+        }
+    }
+
+    /* At 652.5 breaakpoint */
+    @media(max-width:652.5px){
+        .sammy{
+            font-size: 120px;
+        }
+        .avatar{
+            width: 270px;
+            height: 270px;
+        }
+        .hello{
+            width: 100%;
+            text-align: center;
+        }
+        .skill{
+            width: 100%;
+        }
+        .sect1, .sect2{
+            /* border: solid white 2px; */
+            width: 100%;
+            display: block;
+            height: 100vh;
+            justify-content: center;
+        }
+
+        .sect1{
+            /* border: solid 3px yellow; */
+        }
+
+        .first{
+            width: 100%;
+            height: 350px;
+            display: block;
+            align-content: center;
+        }
+
+        .second{
+            display: block;
+            width: 100%;
+            height: 380px;
+            align-content: center;
+        }
+
+        .design{
+            font-size: 35px;
+        }
+
+        .combo{
+            width: 100%;
+            font-size: 17px;
+        }
+
+        .sweet{
+            font-size: 15px;
+            width: 280px;
+        }
+
+        .para2{
+            margin-left: 70px;
+            width: 80%;
+            height: 70px;
+        }
+
+        .dev{
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+
+    /* At 610 breakpoint */
+    @media(max-width:610px){
+        .sammy{
+            font-size: 100px;
+        }
+
+        .avatar{
+            width: 220px;
+            height: 220px;
+        }
+    }
+
+    /* AT 560 Breakpoint */
+    @media(max-width:560px){
+        .hello{
+            font-size: 45px;
+        }
+
+        .web{
+            font-size: 17px;
+        }
+
+        .skill{
+            font: 48px;
+        }
+        .design{
+            font-size: 28px;
+        }
+
+        .dev{
+            width: 250px;
+            height: 250px;
+            margin-left: 0;
+        }
+
+        .touch{
+            font-size: 47px;
+        }
+
+        .contact{
+            font-size: 30px;
+        }
+
+        .contact:hover{
+            font-size: 28px;
+        }
+
+        .para2{
+            font-size: 17px;
+            margin-left: 50px;
+        }
+    }
+
+    /* At 525 breakpoint */
+    @media(max-width:525px){
+        .combo{
+            width: 60%;
+            height: 80px;
+            align-items: center;
+            align-content: center;
+            margin-left: 110px;
+        }
+
+        .skill{
+            margin: 0;
+        }
+    }
+
+    /* At 492.5 breakpoint */
+    @media(max-width:492.5px){
+        .sammy{
+            font-size: 90px;
+          
+        }
+    }
+
+    /* At 435 breakpoint */
+    @media(max-width:435px){
+        .container{
+            height: 100vh;
+        }
+        .sammy{
+            font-size: 85px;
+        }
+
+        .avatar{
+            width: 180px;
+            height: 180px;
+        }
+
+        .skill{
+            font-size: 40px;
+        }
+
+        .design{
+            font-size: 23px;
+        }
+
+        .para2{
+            font-size: 15px;
+            margin-left: 40px;
+        }
+
+        .dev{
+            width: 200px;
+            height: 200px;
+        }
+
+        .bana{
+            width: 200px;
+            height: 200px;
+        }
+        .combo{
+            margin: 80px;
+        }
+    }
+
+    /* At 415 breakpoint */
+    @media(max-width:415px){
+        .sammy{
+            font-size: 80px;
+        }
+    }
+
+    /* At 395 breakpoint */
+    @media(max-width:395px){
+        .sammy{
+            font-size: 75px;
+        }
+    }
+
+    /* At 374.17 breakpoint */
+    @media(max-width: 374.17px){
+        .sammy{
+            font-size: 72px;
+        }
+    }
+
+    /* At 360 breakpoint */
+    @media(max-width:360px){
+        .sammy{
+            font-size: 70px;
+        }
+
+        .touch{
+            font-size: 36px;
+        }
+
+        .contact{
+            font-size: 24px;
+        }
+        .contact:hover{
+            font-size: 22px;
+        }
+        .the_foot{
+            font-size: 18px;
+        }
+        .the_foot:hover{
+            font-size: 16px;
+        }
+
+        .copy{
+            font-size: 12px;
+        }
+    }
+
+    /* At 350 breakpoint */
+    @media(max-width:350px){
+        .sammy{
+            font-size: 68px;
+        }
+    }
+
+    /* At 335 breakpoint */
+    @media(max-width:335px){
+        .container{
+            height: 100vh;
+        }
+        .sammy{
+            line-height: 2;
+            width: 65%;
+            margin-left: 60px;
+        }
+
+        .design{
+            font-size: 20px;
+        }
+        .bana{
+            width: 150px;
+            height: 150px;
+        }
+        .sect3{
+            height: 76vh;
+        }
+        .footer{
+            height: 25vh;
+        }
+
+        .foot{
+            height: 16vh;
+        }
+        .the_foot{
+            font-size: 14px;
+        }
+        .the_foot:hover{
+            font-size: 12px;
+        }
+        .copy{
+            font-size: 12px;
+        }
+        .combo{
+            width: 65%;
+            margin-left: 60px;
+        }
+        .sweet{
+            width: 55%;
+            /* border: solid 2px red; */
+        }   
+    }
+/* At 310 breakpoint */
+@media(max-width:310px){
+    .container{
+        width: 100%;
+    }
+
+    .sammy{
+        width: 80%;
+        margin-left: 30px;
+    }
+    .design{
+        width: 70%;
+        margin-left: 35px;
+        font-size: 30px;
+    }
+    .para2{
+        margin-bottom: 70px;
+        margin-left: 30px;
+    }
+    .sweet{
+        width: 70%;
+    }
+    .combo{
+        margin-left: 55px;
+    }
+}
+
+/* At 280 breakpoint */
+@media(max-width: 280px){
+    .design{
+        width: 100%;
+        margin: 0;
+    }
+
+    .touch{
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+        
+    }
+    .combo{
+        margin-left: 40px;
+    }
+}
+
+/* At 265 breakpoint */
+@media(max-width: 265px){
+
+    .avatar{
+       margin-right: 20px;
+       width: 120px;
+       height: 120px;
+    }
+    .web{
+        width: 80%;
+        font-size: 17px;
+    }
+
+    .hori{
+        height: .5px;
+    }
+    .skill{
+        font-size: 34px;
+    }
+
+    .dev{
+        width: 175px;
+        height: 175px;
+    }
+
+    .design{
+        font-size: 26px;
+    }
+    .para2{
+        font-size: 15px;
+    }
+
+    .contact{
+        font-size: 18px;
+    }
+    .contact:hover{
+        font-size: 16px;
+    }
+
+    .the_foot{
+        font-size: 12px;
+    }
+    .the_foot:hover{
+        font-size: 10px;
+    }
+    .copy{
+        font-size: 9px;
+    }
+}
+
+ /* At 250 breakpoint */
+ @media(max-width: 250px){
+    .sammy{
+        font-size: 60px;
+    }
+
+    .para{
+        font-size: 12px;
+    }
+    .meal{
+        width: 60%;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+    .touch{
+        width: 50%;
+        margin-left: 60px;
+    }
+    .para2{
+        font-size: 13px;
+    }
+    .footer{
+        margin-top: 20px;    
+ }
+}
+
+/* At 225 breakpoint */
+@media(max-width: 225px){
+    .sammy{
+        margin-left: 20px;
+    }
+    .dev{
+        width: 150px;
+        height: 150px;
+    }
+    .design{
+        font-size: 22px;
+    }
+    .meal{
+        margin-left: 40px;
+    }
+    .para2{
+        margin-left: 20px;
+    }
+    .touch{
+        margin-left: 40px;
+    }
+    .combo{
+        margin-left: 30px;
+        font-size: 15px;
+    }
+    .sweet{
+        font-size: 13px;
+        margin-left: 20px;
+    }
+    .contact{
+        margin-right: 30px;
+    }
+}
+
+/* At 221.5 breakpoint */
+@media(max-width: 225px){
+    .sammy{
+        font-size: 50px;
+    }
+}
+
+/* At 210 breakpoint */
+@media(max-width: 210px){
+    .foot{
+        display: block;
+        height: 120px;
+        margin-bottom: 15px;
+        align-content: center;
+        padding-top: 20px;
+    }
+    
+    .the_foot{
+        display: block;
+        height: 30px;
+        padding-left: 5px;
+        align-items: center;
+    }
+}
+
+/* At214 breakpoint */
+@media(max-width: 214.17px){
+    .meal{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* At 195 breakpoint */
+@media(max-width: 195px){
+    .sammy{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* At 190 breakpoint */
+@media(max-width: 190px){
+    .touch{
+        width: 80%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .combo{
+        width: 80%;
+        margin-left: 5px;
+    }
+
+    .sweet{
+        width: 80%;
+        margin-left: 5px;
+    }
+}
